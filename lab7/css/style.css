@@ -1,0 +1,124 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f3;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    background-image: url('../images/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background 0.5s ease-in-out;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav {
+    background: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #4caf50;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+.change-bg-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 30px;
+    font-size: 0.8rem;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.change-bg-btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.admin-link, .content-link {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.admin-link:hover, .content-link:hover {
+    background: #0056b3;
+}

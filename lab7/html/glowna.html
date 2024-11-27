@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Uprawa</title>
+    <script src="js/kolorujto.js"></script>
+    <script src="js/timedate.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="startclock()">
+<table>
+</table>
+   <aside>
+   <h2 id="animacjatestowa2" class="test-block">Kontakt</h2>
+   <form action="" method="post">
+       Imie <input type="text"><br>
+       Nazwisko <input type="text"><br>
+       Email <input type="text">
+       <input type="button" value="wyslij">
+   </form>
+   </aside>
+   <img src="https://sklodowski.com.pl/wp-content/uploads/2021/07/bataja.jpg" alt="pszenica" id="animacjaTestowa3" class="test-block">
+   <script>
+    $("#animacjaTestowa3").on("click", function(){
+        if (!$(this).is(":animated")){
+            $(this).animate({
+                width: "+=" +50,
+                height: "+=" +10,
+                opacity: "-=" +0.1,
+                duration: 3000
+            })
+        }
+    })
+    
+    </script>
+   <script>
+    $("#animacjatestowa2").on({
+        "mouseover": function(){
+            $(this).animate({
+                width:300
+            },800);
+        },
+        "mouseout": function(){
+            $(this).animate({
+                width:200
+            },800);
+                            }
+                            });
+    
+    </script>
+   
+   
+   <img src="https://api.agronomist.pl/media/pszenica_mx0n9fM_6ssv0L5.webp" alt="pszenica">
+   <img src="https://a.allegroimg.com/original/11b1e1/cf44e4654a9aaad509ac7a445ace/pszenica-worek-20-kg-Zbior-lato-2023-sucha" alt="pszenica">
+    <article><p  style="text-align:left; background:rgba(255, 255, 255, 0.36);"><b>Pszenżyto</b> jest zbożem stosunkowo młodym, powstałym w wyniku krzyżowania
+żyta z pszenicą. <u> Może być uprawiane na wszystkich rodzajach gleb i z tego względu
+        zboże te bardzo często występuje w uprawie polowej w całym kraju.</u> Ziarno pszenżyta
+posiada dobrą wartość pokarmową, która wynika z dosyć wysokiej zawartości białka
+o korzystnym składzie aminokwasowym i wysokim współczynniku strawności. Ma
+również mniejszą koncentrację substancji antyżywieniowych niż ziarno żyta. Stanowi doskonały surowiec paszowy, odpowiedni dla większości zwierząt gospodarskich. <img src="https://www.sodr.pl/assets/pics/aktualnosci/2023/foxx.jpg" style="float:right; margin:6px; width:12%; height: 12%" />
+Mąka pszenżytnia ze względu na dużą podatność skrobi na działanie temperatury
+w czasie wypieku, a tym samym szybkość jej kleikowania, ma mniejszą wartość wypiekową niż pszenna. Firmy hodowlane pracują nad stworzeniem odmian pszenżyta,
+których mąka byłaby w pełni przydatna do wypieku chleba.
+        Pszenżyto może być wykorzystane jako surowiec do produkcji bioetanolu. <i> Ten kierunek użytkowania ma duże szanse rozwoju w przyszłości.</i></p></article>
+   
+   <div id="datagodzina"><b>
+    <div id="zegarek"></div>
+       <div id="data"></div></b>
+    </div>
+</body>
+</html>
